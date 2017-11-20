@@ -1,0 +1,31 @@
+<section ng-controller='simonCtrl' id='simon'>
+        <h1>Simon says</h1>
+        <div class="buttons">
+        <button type="button" ui-sref="home">click to quit</button>
+        <button id="start" type="button" ng-click="start(0)">Click to Play</button>
+      </div>
+        <div class="info">
+            Level: {{times}}
+            Color: {{currentColor}}  
+        </div>
+
+     <div class="simon">
+         <div class="pad red" ng-click="click('Red')">
+             <!-- Red -->
+         </div>
+         
+         <div class="pad blue" ng-click="click('Blue')">
+             <!-- Blue -->
+         </div>
+         <br>
+         <div class="pad green" ng-click="click('Green')">
+             <!-- Green -->
+         </div>
+         
+         <div class='pad orange hovering' ng-click="click('Orange')" ng-mouseover="hovering=true"
+         ng-mouseleave="hovering=false">
+             <!-- Orange -->
+         </div>
+         <div class="pad display" id="display">{{stat}}</div>
+     </div>
+    </section>

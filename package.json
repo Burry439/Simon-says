@@ -1,0 +1,18 @@
+{
+  "name": "angugames",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.10",
+    "angular": "^1.6.6",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "font-awesome": "^4.7.0"
+  }
+}
