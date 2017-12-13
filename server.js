@@ -8,6 +8,6 @@ app.use(express.static('node_modules'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.listen(process.env.CONNECTION_STRING || 8000, function() {
+app.listen(process.env.PORT || 8000, function() {
     console.log("yo yo yo, on 8000!!")
   })
