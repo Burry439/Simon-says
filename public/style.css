@@ -21,7 +21,7 @@ body {
 .red.pad {
     left:15px;
     top:15px;
-    background:rgb(255,0,0);
+    background:rgb(212, 2, 2);
     -webkit-border-radius:320px 20px 20px;
     -moz-border-radius:320px 20px 20px;
     -o-border-radius:320px 20px 20px;
@@ -30,7 +30,7 @@ body {
 .green.pad{
     right:15px;
     top:15px;
-    background:rgb(0,255,0);
+    background:rgb(0, 190, 0);
     -webkit-border-radius:20px 320px 20px 20px;
     -moz-border-radius:20px 320px 20px 20px;
     -o-border-radius:20px 320px 20px 20px;
@@ -39,7 +39,7 @@ body {
 .orange.pad{
     bottom:15px;
     right:15px;
-    background:rgb(255, 145, 0);
+    background:rgba(199, 113, 0, 0.945);
     -webkit-border-radius:20px 20px 320px 20px;
     -moz-border-radius:20px 20px 320px 20px;
     -o-border-radius:20px 20px 320px 20px;
@@ -48,7 +48,7 @@ body {
 .blue.pad{
     bottom:15px;
     left:15px;
-    background:rgb(0,0,255);
+    background:rgb(0, 0, 177);
     -webkit-border-radius:20px 20px 20px 320px;
     -moz-border-radius:20px 20px 20px 320px;
     -o-border-radius:20px 20px 20px 320px;
@@ -142,4 +142,21 @@ body {
 .info{
    border-spacing: 100px;
    margin-bottom:  100px;
+}
+
+
+.red:hover{
+    background-color:rgb(255, 0, 0);
+}
+
+.green:hover{
+    background-color: rgb(0, 255, 0)
+}
+
+.orange:hover{
+    background-color:orange
+}
+
+.blue:hover{
+    background-color:blue
 }
