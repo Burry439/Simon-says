@@ -15,7 +15,9 @@ app.use(express.static('node_modules'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-
+app.get('/', function(req, res){
+  res.sendFile('/index.html');
+});
 
 app.get('/scores', function(req, res){
   highScoreM.find(function(err, result){
