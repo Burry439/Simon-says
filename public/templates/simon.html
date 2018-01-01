@@ -2,9 +2,18 @@
         <h1>Simon says</h1>
         <div class="buttons">
         <button type="button" ui-sref="home">click to quit</button>
-        <button id="start" type="button" ng-click="start(0)">Click to Play</button>
+        <button id="start" type="button" ng-click="start(true)">Click to Play</button>
       </div>
         <div class="info">
+            <div class="highscore">
+           <h3>
+           HighScore: {{highscore.score}} 
+           </h3>
+           <h3>
+            By : {{highscore.name}}
+        </h3>
+        </div>
+            <hr>
             Level: {{times}}
             Color: {{currentColor}}  
         </div>
@@ -22,8 +31,7 @@
              <!-- Green -->
          </div>
          
-         <div class='pad orange hovering' ng-click="click('Orange')" ng-mouseover="hovering=true"
-         ng-mouseleave="hovering=false">
+         <div id="o" class='pad orange' ng-click="click('Orange')">
              <!-- Orange -->
          </div>
          <div class="pad display" id="display">{{stat}}</div>
