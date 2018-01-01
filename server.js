@@ -3,7 +3,7 @@ var express = require('express');
 var bodyParser = require('body-parser')
 var mongoose = require('mongoose');
 
-mongoose.connect(process.env.CONNECTION_STRING|| 'mongodb://localhost/simonSays', function() {
+mongoose.connect(process.env.CONNECTION_STRING|| 'mongodb://dude439:1zxcvbnm@ds239217.mlab.com:39217/simon-says', function() {
   console.log("DB connection established!!!");
 })
 var highScoreM = require('./models/model')
